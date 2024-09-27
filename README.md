@@ -11,6 +11,7 @@ This repository provides a Python implementation of a real-time object detection
 5. [Code Structure](#code-structure)
    - [ObjectDetector Class](#objectdetector-class)
    - [Signal Handling](#signal-handling)
+5. [Step-by-Step Code Explanation](#step-by-step-code-explanation) 
 6. [License](#license)
 
 ## Overview
@@ -67,5 +68,13 @@ To ensure a clean exit from the program, the script handles the SIGINT signal (C
 
 ![image](https://github.com/user-attachments/assets/91b5a848-2f92-4aa3-a6d1-00c862124812)
 
+## Step-by-Step Code Explanation
+
+1. Imports:
+   ![image](https://github.com/user-attachments/assets/305fac9d-d614-458b-8be0-2c7c487f3726)
+- The script imports essential libraries like cv2 for computer vision tasks, numpy for numerical operations, and signal and sys for managing termination signals.
+
+
 ## License
 This project is licensed under the GNU General Public License. See the LICENSE file for more information.
+
