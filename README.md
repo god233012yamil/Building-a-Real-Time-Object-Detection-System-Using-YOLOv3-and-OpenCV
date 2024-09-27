@@ -52,6 +52,7 @@ Place these files in the same directory as the Python script.
 
 ## Code Structure
 **ObjectDetector Class**
+
 The ObjectDetector class encapsulates the core functionalities of the YOLOv3 object detection system. Here’s a breakdown of its main components:
 
 - _init_ method: Initializes the YOLO model with the provided paths to weights, configuration, and class names.
@@ -61,6 +62,7 @@ The ObjectDetector class encapsulates the core functionalities of the YOLOv3 obj
 - run method: Manages video capture, processes each frame in real-time, performs object detection, and displays the output.
 
 **Signal Handling**
+
 To ensure a clean exit from the program, the script handles the SIGINT signal (Ctrl+C) to stop the program and release resources properly. This is achieved using:
 
 ![image](https://github.com/user-attachments/assets/91b5a848-2f92-4aa3-a6d1-00c862124812)
