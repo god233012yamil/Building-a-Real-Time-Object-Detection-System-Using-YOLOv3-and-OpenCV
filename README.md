@@ -19,7 +19,7 @@ This repository provides a Python implementation of a real-time object detection
 
 ## Overview
 
-This project is built to demonstrate the power of real-time object detection using YOLOv3 and OpenCV. YOLOv3 is a highly efficient deep learning-based algorithm for detecting multiple objects in real-time with high accuracy. The script processes video streams (like webcam feeds), detects objects, and draws bounding boxes around them, labeling the detected objects.
+This project is built to demonstrate the power of real-time object detection using YOLOv3 and OpenCV. YOLOv3 is a highly efficient deep learning-based algorithm for detecting multiple objects in real time with high accuracy. The script processes video streams (like webcam feeds), detects objects, and draws bounding boxes around them, labeling the detected objects.
 
 The script is written using a class-based structure for modularity and easy extension, with functionality to gracefully handle termination signals.
 
@@ -40,5 +40,17 @@ The script is written using a class-based structure for modularity and easy exte
 
 Install the required Python libraries using the following command:
 
-```bash
 pip install opencv-python numpy
+
+## YOLOv3 Files
+To use YOLOv3 for object detection, you need to download the following files:
+
+yolov3.weights: Pre-trained weights file.
+Download link: https://pjreddie.com/media/files/yolov3.weights
+yolov3.cfg: YOLOv3 configuration file.
+coco.names: File containing the names of the classes.
+You can download these files from the official YOLOv3 website.
+
+Place these files in the same directory as the Python script.
+
+
