@@ -11,8 +11,7 @@ This repository provides a Python implementation of a real-time object detection
 5. [Code Structure](#code-structure)
    - [ObjectDetector Class](#objectdetector-class)
    - [Signal Handling](#signal-handling)
-6. [Contributing](#contributing)
-7. [License](#license)
+6. [License](#license)
 
 ## Overview
 
@@ -55,9 +54,16 @@ Place these files in the same directory as the Python script.
 **ObjectDetector Class**
 The ObjectDetector class encapsulates the core functionalities of the YOLOv3 object detection system. Here’s a breakdown of its main components:
 
-- __init__ method: Initializes the YOLO model with the provided paths to weights, configuration, and class names.
+- _init_ method: Initializes the YOLO model with the provided paths to weights, configuration, and class names.
 - _get_output_layers method: Retrieves the names of the YOLO model’s output layers needed for detection.
 - detect_objects method: Preprocesses each video frame, runs the YOLO model, and returns detection outputs.
 - draw_bounding_boxes method: Draws bounding boxes and class labels on detected objects in the video frame.
 - run method: Manages video capture, processes each frame in real-time, performs object detection, and displays the output.
 
+**Signal Handling**
+To ensure a clean exit from the program, the script handles the SIGINT signal (Ctrl+C) to stop the program and release resources properly. This is achieved using:
+
+![image](https://github.com/user-attachments/assets/91b5a848-2f92-4aa3-a6d1-00c862124812)
+
+## License
+This project is licensed under the GNU General Public License. See the LICENSE file for more information.
