@@ -40,11 +40,11 @@ pip install opencv-python numpy
 To use YOLOv3 for object detection, you need to download the following files:
 
 1. yolov3.weights: Pre-trained weights file.
-- Download link: https://pjreddie.com/media/files/yolov3.weights
+Download link: https://pjreddie.com/media/files/yolov3.weights
 2. yolov3.cfg: YOLOv3 configuration file.
-- Download link: https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg
+Download link: https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg
 3. coco.names: File containing the names of the classes.
-- Download link: https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
+Download link: https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
 
 Place these files in the same directory as the Python script.
 
