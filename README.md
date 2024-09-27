@@ -71,7 +71,9 @@ To ensure a clean exit from the program, the script handles the SIGINT signal (C
 ## Step-by-Step Code Explanation
 
 1. Imports:
-   ![image](https://github.com/user-attachments/assets/305fac9d-d614-458b-8be0-2c7c487f3726)
+   
+![image](https://github.com/user-attachments/assets/305fac9d-d614-458b-8be0-2c7c487f3726)
+
 - The script imports essential libraries like cv2 for computer vision tasks, numpy for numerical operations, and signal and sys for managing termination signals.
 
 
