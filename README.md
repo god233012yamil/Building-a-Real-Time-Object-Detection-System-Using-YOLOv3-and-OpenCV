@@ -67,49 +67,49 @@ To ensure a clean exit from the program, the script handles the SIGINT signal (C
 
 ## Step-by-Step Code Explanation
 
-1. **Imports:**
+**1. Imports:**
    
 ![image](https://github.com/user-attachments/assets/305fac9d-d614-458b-8be0-2c7c487f3726)
 
 The script imports essential libraries like cv2 for computer vision tasks, numpy for numerical operations, and signal and sys for managing termination signals.
 
-2. **Class Definition: ObjectDetector:**
+**2. Class Definition: ObjectDetector:**
 
 ![image](https://github.com/user-attachments/assets/3fed422e-5460-47b0-b96c-9883456da688)
 
 A class-based approach is used for object detection to encapsulate all related functions and variables. This class handles the initialization and running of the YOLO detection model.
 
-3. **Initialization (__init__ method):**
+**3. Initialization (__init__ method):**
 
 ![image](https://github.com/user-attachments/assets/e2e51667-9501-40ff-814c-5e9e308f43b5)
 
 The constructor initializes the object detector with paths to the model's weights (weights_path), configuration (config_path), and class names (classes_path). It loads the YOLO model using OpenCV’s DNN module (cv2.dnn.readNet).
 
-4. **Setting up the YOLO Network:**
+**4. Setting up the YOLO Network:**
 
 ![image](https://github.com/user-attachments/assets/0726d5c4-7b11-4343-b9e9-3583a479c718)
 
 This helper method retrieves the names of the output layers from the YOLO network, which are essential for running object detection.
 
-5. **Detection Function (detect_objects method):**
+**5. Detection Function (detect_objects method):**
 
  ![image](https://github.com/user-attachments/assets/8a00ee18-ed98-48af-9377-a46fcc447285)
   
 This method accepts a frame from the video feed, processes it into a blob suitable for the YOLO model (cv2.dnn.blobFromImage), and then runs the forward pass through the network to get the detection results.
 
-6. **Drawing Bounding Boxes (draw_bounding_boxes method):**
+**6. Drawing Bounding Boxes (draw_bounding_boxes method):**
 
 ![image](https://github.com/user-attachments/assets/b95e6508-cc14-41be-bb5e-ff23f9e57c6b)
 
 This method processes the YOLO model’s outputs, extracts bounding box coordinates and class IDs, and draws them on the frame using cv2.rectangle and cv2.putText.
 
-7. **Main Loop:**
+**7. Main Loop:**
 
 ![image](https://github.com/user-attachments/assets/9458c20c-adf8-4d17-ae17-2d5f7e0efda2)
 
 The run method opens a video feed (or camera stream), continuously reads frames, detects objects, and displays the results with bounding boxes in real-time.
 
-8. **Signal Handling for Graceful Exit:**
+**8. Signal Handling for Graceful Exit:**
 
 ![image](https://github.com/user-attachments/assets/57845695-db7f-4a0b-976e-d3ffb4ea330d)
 
